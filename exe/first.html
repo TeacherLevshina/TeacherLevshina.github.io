@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>ЭОР</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+    <body width="80%">
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../main.html">Главная</a>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Занятия</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="first.html">Первое занятие</a>
+                <a class="dropdown-item" href="second.html">Второе занятие</a>
+                <a class="dropdown-item" href="third.html">Третье занятие</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../video.html">Вебинар</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Тесты</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="../test/first.html">Тест 1</a>
+                  <a class="dropdown-item" href="../test/second.html">Тест 2</a>
+                  <a class="dropdown-item" href="../test/third.html">Тест 3</a>
+                </div>
+            </li>
+        </ul>
+        <div class="content">
+          <h3>Тема:</h3><p>Системы счисления и двоичное представление информации в памяти компьютера.</p>
+          <p>Что нужно знать:</p>
+          <ul>
+            <li>перевод чисел между десятичной, двоичной, восьмеричной и шестнадцатеричной системами счисления (см. презентацию «Системы счисления»)
+            <p><b>Полезно помнить, что в двоичной системе:</b></p>
+            <ul>
+              <li>четные числа оканчиваются на 0, нечетные – на 1</li>
+              <li>числа, которые делятся на 4, оканчиваются на 00, и т.д.; числа, которые делятся на 2<sup>k</sup>, оканчиваются на <i>k</i> нулей</li>
+              <li>если число N принадлежит интервалу 2<sup>k-1</sup> < N < 2<sup>k</sup>, в его двоичной записи будет всего k цифр, например, для числа 125:
+              <p> 2<sup>6</sup> = 64 <= 125 < 128 = 2<sup>7</sup>,    125 = 1111101<sub>2</sub>  (7 цифр)</p></li>
+              <li>числа вида 2<sup>k</sup> записываются в двоичной системе как единица и <i>k</i> нулей, например:
+                <p>16 = 2<sup>4</sup> = 10000<sub>2</sub></p></li>
+              <li>числа вида 2<sup>k</sup>-1 записываются в двоичной системе k единиц, например:
+                <p>15 = 2<sup>4</sup>-1 = 1111<sub>2</sub></p></li>
+              <li>если известна двоичная запись числа N, то двоичную запись числа 2·N можно легко получить, приписав в конец ноль, например:
+                <p>15 = 1111<sub>2</sub>, 30 = 11110<sub>2</sub>, 60 = 111100<sub>2</sub>, 120 = 1111000<sub>2</sub></p></li>
+              </li>
+            </ul>
+            <li>желательно выучить наизусть таблицу двоичного представления чисел 0-7 в виде триад (групп из 3-х битов):
+              <table class="table table-bordered">
+                <thead>
+                  <th scope="col"><p>X<sub>10</sub>, X<sub>8</sub></p></th>
+                  <th scope="col"><p>X<sub>2</sub></p></th>
+                </thead>
+                <tr>
+                  <td>0</td>
+                  <td>000</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>001</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>010</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>011</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>101</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>110</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>111</td>
+                </tr>
+              </table>
+              и таблицу двоичного представления чисел 0-15 (в шестнадцатеричной системе – 0-F16) в виде тетрад (групп из 4-х битов):
+          <table class="table table-bordered">
+            <thead>
+
+              <th scope="col"><p>X<sub>10</sub></th>
+              <th scope="col"><p>X<sub>16</sub></p></th>
+              <th scope="col"><p>X<sub>2</sub></p></p></th>
+            </thead>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>0000</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>0001</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>2</td>
+              <td>0010</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>3</td>
+              <td>0011</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>4</td>
+              <td>0100</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>5</td>
+              <td>0101</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>6</td>
+              <td>0110</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>7</td>
+              <td>0111</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>8</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>9</td>
+              <td>1001</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>A</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>B</td>
+              <td>1011</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>C</td>
+              <td>1100</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>D</td>
+              <td>1011</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>D</td>
+              <td>1110</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>E</td>
+              <td>1111</td>
+            </tr>
+          </table>
+          </li>
+          <li>отрицательные целые числа хранятся в памяти в двоичном дополнительном коде</li>
+          <li>для перевода отрицательного числа (-a) в двоичный дополнительный код нужно сделать следующие операции:</li>
+          <ul>
+            <li>перевести число a-1 в двоичную систему счисления;</li>
+            <li>сделать инверсию битов: заменить все нули на единицы и единицы на нули в пределах разрядной сетки (см. пример Р-00 далее).</li>
+          </ul>
+        </div>
+    </center>
+    </body>
+</html>
